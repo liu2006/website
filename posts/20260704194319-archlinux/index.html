@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="关于arch linux的安装教程# 使用 setfont-132tar 设置终端大号字体，使用 ip link 检查网卡，通过iwctl工具进行无线网连接。 通过 ping (website) 检查网络连接是否成功。 随后使用fdisk工具对磁盘进行分区, 并格式化format分区，挂载mount分区。 更换本地源origin可以提升下载速度降低失败率。 现在可以使用pacstrap安装必要的固件。 设置setting系统开机自动挂载规则并进入系统。 设置setting时区并写入硬件。 启动enable必要的服务。 主机本地化local。 设置管理员密码password，创建用户。 增强字体font渲染。 安装引导grub程序。 最后通过 umount -R /mnt 卸载挂载点。 DONE 安装完成 &lt;2026-07-06 一&gt;#">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#2e3440">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/posts/20260704194319-archlinux/">
+	<meta property="og:site_name" content="Tutorial">
+	<meta property="og:title" content="Tutorial">
+	<meta property="og:description" content="关于arch linux的安装教程# 使用 setfont-132tar 设置终端大号字体，使用 ip link 检查网卡，通过iwctl工具进行无线网连接。 通过 ping (website) 检查网络连接是否成功。 随后使用fdisk工具对磁盘进行分区, 并格式化format分区，挂载mount分区。 更换本地源origin可以提升下载速度降低失败率。 现在可以使用pacstrap安装必要的固件。 设置setting系统开机自动挂载规则并进入系统。 设置setting时区并写入硬件。 启动enable必要的服务。 主机本地化local。 设置管理员密码password，创建用户。 增强字体font渲染。 安装引导grub程序。 最后通过 umount -R /mnt 卸载挂载点。 DONE 安装完成 &lt;2026-07-06 一&gt;#">
+	<meta property="og:locale" content="zh_cn">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="posts">
+
+
+	<meta itemprop="name" content="Tutorial">
+	<meta itemprop="description" content="关于arch linux的安装教程# 使用 setfont-132tar 设置终端大号字体，使用 ip link 检查网卡，通过iwctl工具进行无线网连接。 通过 ping (website) 检查网络连接是否成功。 随后使用fdisk工具对磁盘进行分区, 并格式化format分区，挂载mount分区。 更换本地源origin可以提升下载速度降低失败率。 现在可以使用pacstrap安装必要的固件。 设置setting系统开机自动挂载规则并进入系统。 设置setting时区并写入硬件。 启动enable必要的服务。 主机本地化local。 设置管理员密码password，创建用户。 增强字体font渲染。 安装引导grub程序。 最后通过 umount -R /mnt 卸载挂载点。 DONE 安装完成 &lt;2026-07-06 一&gt;#">
+	<meta itemprop="wordCount" content="32">
+
+<title>Tutorial • Tutorial</title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="http://localhost:1313/posts/20260704194319-archlinux/">
+<link rel="stylesheet" href="/book.min.b71fe3c1d3675e52d80430d63a71819e12d05dee934e099a700bacfd4c49a7be.css" integrity="sha256-tx/jwdNnXlLYBDDWOnGBnhLQXe6TTgmacAus/UxJp74=" crossorigin="anonymous">
+
+
+  <script defer type="module" src="/en.search.min.d6670d629b29347e791935fce428bfb8e0127cffe0399866a8e342e23765f852.js" integrity="sha256-1mcNYpspNH55GTX85Ci/uOASfP/gOZhmqONC4jdl&#43;FI=" crossorigin="anonymous"></script>
+
+  
+</head>
+<body dir="ltr" class="book-kind-page book-type-posts">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    
+<aside class="book-menu">
+  <div class="book-menu-content">
+    
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>Tutorial</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input id="book-search-input" type="text" 
+    placeholder="Search"
+    aria-label="Search"
+    maxlength="64" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/posts/20260704211352-enable/" class="">
+      enable</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/posts/20260704201436-fdisk/" class="">
+      fdisk</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/posts/20260704212100-font/" class="">
+      font</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/posts/20260704203724-format/" class="">
+      format</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/posts/20260704212154-grub/" class="">
+      grub</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/posts/20260706070507-iwctl/" class="">
+      iwctl</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/posts/20260704211528-local/" class="">
+      local</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/posts/20260704210004-mount/" class="">
+      mount</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/posts/20260704210454-origin/" class="">
+      origin</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/posts/20260704210707-pacstrap/" class="">
+      pacstrap</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/posts/20260704211928-password/" class="">
+      password</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/posts/20260704211013-setting/" class="">
+      setting</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/posts/20260704211248-setting/" class="">
+      setting</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/posts/20260704194319-archlinux/" class="active">
+      Tutorial</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+
+  </div>
+</aside>
+ 
+
+    <div class="book-page">
+      <header class="book-header hidden">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/icons/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>Tutorial</h3>
+
+  <label for="toc-control">
+    
+    <img src="/icons/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#关于arch-linux的安装教程">关于arch linux的安装教程</a></li>
+    <li><a href="#安装完成"><span class="org-todo done DONE">DONE</span> 安装完成 <span class="timestamp-wrapper"><span class="timestamp">&lt;2026-07-06 一&gt;</span></span></a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+<article class="markdown book-post">
+  <h1>
+    Tutorial
+  </h1>
+  
+
+
+  
+
+  
+
+
+  <div class="book-post-content markdown-inner"><h2 id="关于arch-linux的安装教程">关于arch linux的安装教程<a class="anchor" href="#%e5%85%b3%e4%ba%8earch-linux%e7%9a%84%e5%ae%89%e8%a3%85%e6%95%99%e7%a8%8b">#</a></h2>
+<ul>
+<li>使用 <code>setfont-132tar</code> 设置终端大号字体，使用 <code>ip link</code> 检查网卡，通过<a href="/posts/20260706070507-iwctl/">iwctl</a>工具进行无线网连接。</li>
+<li>通过 <code>ping (website)</code> 检查网络连接是否成功。</li>
+<li>随后使用<a href="/posts/20260704201436-fdisk/">fdisk</a>工具对磁盘进行分区, 并格式化<a href="/posts/20260704203724-format/">format</a>分区，挂载<a href="/posts/20260704210004-mount/">mount</a>分区。</li>
+<li>更换本地源<a href="/posts/20260704210454-origin/">origin</a>可以提升下载速度降低失败率。</li>
+<li>现在可以使用<a href="/posts/20260704210707-pacstrap/">pacstrap</a>安装必要的固件。</li>
+<li>设置<a href="/posts/20260704211013-setting/">setting</a>系统开机自动挂载规则并进入系统。</li>
+<li>设置<a href="/posts/20260704211248-setting/">setting</a>时区并写入硬件。</li>
+<li>启动<a href="/posts/20260704211352-enable/">enable</a>必要的服务。</li>
+<li>主机本地化<a href="/posts/20260704211528-local/">local</a>。</li>
+<li>设置管理员密码<a href="/posts/20260704211928-password/">password</a>，创建用户。</li>
+<li>增强字体<a href="/posts/20260704212100-font/">font</a>渲染。</li>
+<li>安装引导<a href="/posts/20260704212154-grub/">grub</a>程序。</li>
+<li>最后通过 <code>umount -R /mnt</code> 卸载挂载点。</li>
+</ul>
+<h2 id="安装完成"><span class="org-todo done DONE">DONE</span> 安装完成 <span class="timestamp-wrapper"><span class="timestamp">&lt;2026-07-06 一&gt;</span></span><a class="anchor" href="#%e5%ae%89%e8%a3%85%e5%ae%8c%e6%88%90">#</a></h2>
+</div>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+  <div>
+  
+    <a href="/posts/20260704211248-setting/" class="flex align-center">
+      <img src="/icons/backward.svg" class="book-icon" alt="Backward" />
+      <span>setting</span>
+    </a>
+  
+  </div>
+  <div>
+  
+  </div>
+</div>
+ 
+        
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+        
+        
+  
+ 
+        
+  
+    <script>(function(){document.querySelectorAll("pre:has(code)").forEach(e=>{e.addEventListener("click",e.focus),e.addEventListener("copy",function(t){if(t.preventDefault(),navigator.clipboard){const t=window.getSelection().toString()||e.textContent;navigator.clipboard.writeText(t)}})})})()</script>
+  
+
+      </footer>
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  
+  <aside class="book-toc">
+    <div class="book-toc-content">
+      
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#关于arch-linux的安装教程">关于arch linux的安装教程</a></li>
+    <li><a href="#安装完成"><span class="org-todo done DONE">DONE</span> 安装完成 <span class="timestamp-wrapper"><span class="timestamp">&lt;2026-07-06 一&gt;</span></span></a></li>
+  </ul>
+</nav>
+
+
+
+    </div>
+  </aside>
+  
+ 
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

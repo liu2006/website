@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="关于fdisk工具的使用教程# fdisk -l #列出可用硬盘和分区情况 fdisk device #对指定设备进行分区 - g #创建GPT分区 - n #新建分区 - d #删除分区 - t #设置分区类型 - w #保存分区">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#2e3440">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/posts/20260704201436-fdisk/">
+	<meta property="og:site_name" content="Tutorial">
+	<meta property="og:title" content="fdisk">
+	<meta property="og:description" content="关于fdisk工具的使用教程# fdisk -l #列出可用硬盘和分区情况 fdisk device #对指定设备进行分区 - g #创建GPT分区 - n #新建分区 - d #删除分区 - t #设置分区类型 - w #保存分区">
+	<meta property="og:locale" content="zh_cn">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="posts">
+
+
+	<meta itemprop="name" content="fdisk">
+	<meta itemprop="description" content="关于fdisk工具的使用教程# fdisk -l #列出可用硬盘和分区情况 fdisk device #对指定设备进行分区 - g #创建GPT分区 - n #新建分区 - d #删除分区 - t #设置分区类型 - w #保存分区">
+	<meta itemprop="wordCount" content="22">
+
+<title>fdisk • Tutorial</title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="http://localhost:1313/posts/20260704201436-fdisk/">
+<link rel="stylesheet" href="/book.min.b71fe3c1d3675e52d80430d63a71819e12d05dee934e099a700bacfd4c49a7be.css" integrity="sha256-tx/jwdNnXlLYBDDWOnGBnhLQXe6TTgmacAus/UxJp74=" crossorigin="anonymous">
+
+
+  <script defer type="module" src="/en.search.min.d6670d629b29347e791935fce428bfb8e0127cffe0399866a8e342e23765f852.js" integrity="sha256-1mcNYpspNH55GTX85Ci/uOASfP/gOZhmqONC4jdl&#43;FI=" crossorigin="anonymous"></script>
+
+  
+</head>
+<body dir="ltr" class="book-kind-page book-type-posts">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    
+<aside class="book-menu">
+  <div class="book-menu-content">
+    
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>Tutorial</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input id="book-search-input" type="text" 
+    placeholder="Search"
+    aria-label="Search"
+    maxlength="64" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/posts/20260704194319-archlinux/" class="">
+      ArchLinux</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/posts/20260704211352-enable/" class="">
+      enable</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/posts/20260704201436-fdisk/" class="active">
+      fdisk</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/posts/20260704212100-font/" class="">
+      font</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/posts/20260704203724-format/" class="">
+      format</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/posts/20260704212154-grub/" class="">
+      grub</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/posts/20260706070507-iwctl/" class="">
+      iwctl</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/posts/20260704211528-local/" class="">
+      local</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/posts/20260704210004-mount/" class="">
+      mount</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/posts/20260704210454-origin/" class="">
+      origin</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/posts/20260704210707-pacstrap/" class="">
+      pacstrap</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/posts/20260704211928-password/" class="">
+      password</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/posts/20260704211013-setting/" class="">
+      setting</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/posts/20260704211248-setting/" class="">
+      setting</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+
+  </div>
+</aside>
+ 
+
+    <div class="book-page">
+      <header class="book-header hidden">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/icons/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>fdisk</h3>
+
+  <label for="toc-control">
+    
+    <img src="/icons/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#关于fdisk工具的使用教程">关于fdisk工具的使用教程</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+<article class="markdown book-post">
+  <h1>
+    fdisk
+  </h1>
+  
+
+
+  
+
+  
+
+
+  <div class="book-post-content markdown-inner"><h2 id="关于fdisk工具的使用教程">关于fdisk工具的使用教程<a class="anchor" href="#%e5%85%b3%e4%ba%8efdisk%e5%b7%a5%e5%85%b7%e7%9a%84%e4%bd%bf%e7%94%a8%e6%95%99%e7%a8%8b">#</a></h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>fdisk -l  <span style="color:#75715e">#列出可用硬盘和分区情况</span>
+</span></span><span style="display:flex;"><span>fdisk device  <span style="color:#75715e">#对指定设备进行分区</span>
+</span></span><span style="display:flex;"><span>- g  <span style="color:#75715e">#创建GPT分区</span>
+</span></span><span style="display:flex;"><span>- n  <span style="color:#75715e">#新建分区</span>
+</span></span><span style="display:flex;"><span>- d  <span style="color:#75715e">#删除分区</span>
+</span></span><span style="display:flex;"><span>- t  <span style="color:#75715e">#设置分区类型</span>
+</span></span><span style="display:flex;"><span>- w  <span style="color:#75715e">#保存分区</span></span></span></code></pre></div></div>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+  <div>
+  
+    <a href="/posts/20260704211352-enable/" class="flex align-center">
+      <img src="/icons/backward.svg" class="book-icon" alt="Backward" />
+      <span>enable</span>
+    </a>
+  
+  </div>
+  <div>
+  
+    <a href="/posts/20260704212100-font/" class="flex align-center">
+      <span>font</span>
+      <img src="/icons/forward.svg" class="book-icon" alt="Forward" />
+    </a>
+  
+  </div>
+</div>
+ 
+        
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+        
+        
+  
+ 
+        
+  
+    <script>(function(){document.querySelectorAll("pre:has(code)").forEach(e=>{e.addEventListener("click",e.focus),e.addEventListener("copy",function(t){if(t.preventDefault(),navigator.clipboard){const t=window.getSelection().toString()||e.textContent;navigator.clipboard.writeText(t)}})})})()</script>
+  
+
+      </footer>
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  
+  <aside class="book-toc">
+    <div class="book-toc-content">
+      
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#关于fdisk工具的使用教程">关于fdisk工具的使用教程</a></li>
+  </ul>
+</nav>
+
+
+
+    </div>
+  </aside>
+  
+ 
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
