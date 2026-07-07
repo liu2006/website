@@ -1,0 +1,25 @@
+Tutorial
+
+- enable: http://localhost:1313/website/posts/20260704211352-enable/
+- fdisk: http://localhost:1313/website/posts/20260704201436-fdisk/
+- font: http://localhost:1313/website/posts/20260704212100-font/
+- format: http://localhost:1313/website/posts/20260704203724-format/
+- grub: http://localhost:1313/website/posts/20260704212154-grub/
+- iwctl: http://localhost:1313/website/posts/20260706070507-iwctl/
+- local: http://localhost:1313/website/posts/20260704211528-local/
+- mount: http://localhost:1313/website/posts/20260704210004-mount/
+- origin: http://localhost:1313/website/posts/20260704210454-origin/
+- pacstrap: http://localhost:1313/website/posts/20260704210707-pacstrap/
+- password: http://localhost:1313/website/posts/20260704211928-password/
+- setting: http://localhost:1313/website/posts/20260704211013-setting/
+- setting: http://localhost:1313/website/posts/20260704211248-setting/
+
+
+## 如何格式化分区 {#如何格式化分区}
+
+```bash
+mkfs.ext4 /dev/root_partiion  #格式化根分区
+mkswap /dev/swap_partition  #格式化交换分区
+mkfs.fat -F32 /dev/efi_partition  #格式化efi分区
+```
+

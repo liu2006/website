@@ -1,0 +1,23 @@
+Tutorial
+
+- enable: http://localhost:1313/website/posts/20260704211352-enable/
+- fdisk: http://localhost:1313/website/posts/20260704201436-fdisk/
+- font: http://localhost:1313/website/posts/20260704212100-font/
+- format: http://localhost:1313/website/posts/20260704203724-format/
+- grub: http://localhost:1313/website/posts/20260704212154-grub/
+- iwctl: http://localhost:1313/website/posts/20260706070507-iwctl/
+- local: http://localhost:1313/website/posts/20260704211528-local/
+- mount: http://localhost:1313/website/posts/20260704210004-mount/
+- origin: http://localhost:1313/website/posts/20260704210454-origin/
+- pacstrap: http://localhost:1313/website/posts/20260704210707-pacstrap/
+- password: http://localhost:1313/website/posts/20260704211928-password/
+- setting: http://localhost:1313/website/posts/20260704211013-setting/
+- setting: http://localhost:1313/website/posts/20260704211248-setting/
+
+
+## 更换China源 {#更换china源}
+
+```bash
+reflector --country China --age 24 --sort rate --protocol https --save /etc/pacman.d/mirrorlist
+```
+

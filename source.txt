@@ -1,0 +1,36 @@
+Tutorial
+
+- enable: http://localhost:1313/website/posts/20260704211352-enable/
+- fdisk: http://localhost:1313/website/posts/20260704201436-fdisk/
+- font: http://localhost:1313/website/posts/20260704212100-font/
+- format: http://localhost:1313/website/posts/20260704203724-format/
+- grub: http://localhost:1313/website/posts/20260704212154-grub/
+- iwctl: http://localhost:1313/website/posts/20260706070507-iwctl/
+- local: http://localhost:1313/website/posts/20260704211528-local/
+- mount: http://localhost:1313/website/posts/20260704210004-mount/
+- origin: http://localhost:1313/website/posts/20260704210454-origin/
+- pacstrap: http://localhost:1313/website/posts/20260704210707-pacstrap/
+- password: http://localhost:1313/website/posts/20260704211928-password/
+- setting: http://localhost:1313/website/posts/20260704211013-setting/
+- setting: http://localhost:1313/website/posts/20260704211248-setting/
+
+
+## 关于arch linux的安装教程 {#关于arch-linux的安装教程}
+
+-   使用 `setfont-132tar` 设置终端大号字体，使用 `ip link` 检查网卡，通过[iwctl]({{< relref "20260706070507-iwctl.md" >}})工具进行无线网连接。
+-   通过 `ping (website)` 检查网络连接是否成功。
+-   随后使用[fdisk]({{< relref "20260704201436-fdisk.md" >}})工具对磁盘进行分区, 并格式化[format]({{< relref "20260704203724-format.md" >}})分区，挂载[mount]({{< relref "20260704210004-mount.md" >}})分区。
+-   更换本地源[origin]({{< relref "20260704210454-origin.md" >}})可以提升下载速度降低失败率。
+-   现在可以使用[pacstrap]({{< relref "20260704210707-pacstrap.md" >}})安装必要的固件。
+-   设置[setting]({{< relref "20260704211013-setting.md" >}})系统开机自动挂载规则并进入系统。
+-   设置[setting]({{< relref "20260704211248-setting.md" >}})时区并写入硬件。
+-   启动[enable]({{< relref "20260704211352-enable.md" >}})必要的服务。
+-   主机本地化[local]({{< relref "20260704211528-local.md" >}})。
+-   设置管理员密码[password]({{< relref "20260704211928-password.md" >}})，创建用户。
+-   增强字体[font]({{< relref "20260704212100-font.md" >}})渲染。
+-   安装引导[grub]({{< relref "20260704212154-grub.md" >}})程序。
+-   最后通过 `umount -R /mnt` 卸载挂载点。
+
+
+## <span class="org-todo done DONE">DONE</span> 安装完成 <span class="timestamp-wrapper"><span class="timestamp">&lt;2026-07-06 一&gt;</span></span> {#安装完成}
+
