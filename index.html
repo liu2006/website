@@ -9,17 +9,20 @@ https://github.com/alex-shpak/hugo-book
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="">
+<meta name="description" content="TODO 开始安装 &lt;2026-07-06 一&gt;# 关于arch linux的安装教程# 使用 setfont-132tar 设置终端大号字体，使用 ip link 检查网卡，通过iwctl工具进行无线网连接。 通过 ping (website) 检查网络连接是否成功。 随后使用fdisk工具对磁盘进行分区, 并格式化format分区，挂载mount分区。 更换本地源origin可以提升下载速度降低失败率。 现在可以使用pacstrap安装必要的固件。 设置setting系统开机自动挂载规则并进入系统。 设置setting时区并写入硬件。 启动enable必要的服务。 主机本地化local。 设置管理员密码password，创建用户。 增强字体font渲染。 安装引导grub程序。 最后通过 umount -R /mnt 卸载挂载点。 DONE 安装完成 &lt;2026-07-06 一&gt;#">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#2e3440">
 <meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/website/">
 	<meta property="og:site_name" content="Tutorial">
 	<meta property="og:title" content="Tutorial">
+	<meta property="og:description" content="TODO 开始安装 &lt;2026-07-06 一&gt;# 关于arch linux的安装教程# 使用 setfont-132tar 设置终端大号字体，使用 ip link 检查网卡，通过iwctl工具进行无线网连接。 通过 ping (website) 检查网络连接是否成功。 随后使用fdisk工具对磁盘进行分区, 并格式化format分区，挂载mount分区。 更换本地源origin可以提升下载速度降低失败率。 现在可以使用pacstrap安装必要的固件。 设置setting系统开机自动挂载规则并进入系统。 设置setting时区并写入硬件。 启动enable必要的服务。 主机本地化local。 设置管理员密码password，创建用户。 增强字体font渲染。 安装引导grub程序。 最后通过 umount -R /mnt 卸载挂载点。 DONE 安装完成 &lt;2026-07-06 一&gt;#">
 	<meta property="og:locale" content="zh_cn">
 	<meta property="og:type" content="website">
 
 
 	<meta itemprop="name" content="Tutorial">
+	<meta itemprop="description" content="TODO 开始安装 &lt;2026-07-06 一&gt;# 关于arch linux的安装教程# 使用 setfont-132tar 设置终端大号字体，使用 ip link 检查网卡，通过iwctl工具进行无线网连接。 通过 ping (website) 检查网络连接是否成功。 随后使用fdisk工具对磁盘进行分区, 并格式化format分区，挂载mount分区。 更换本地源origin可以提升下载速度降低失败率。 现在可以使用pacstrap安装必要的固件。 设置setting系统开机自动挂载规则并进入系统。 设置setting时区并写入硬件。 启动enable必要的服务。 主机本地化local。 设置管理员密码password，创建用户。 增强字体font渲染。 安装引导grub程序。 最后通过 umount -R /mnt 卸载挂载点。 DONE 安装完成 &lt;2026-07-06 一&gt;#">
+	<meta itemprop="wordCount" content="36">
 
 <title>Tutorial • Tutorial</title>
 <link rel="icon" href="/website/favicon.png" >
@@ -28,7 +31,7 @@ https://github.com/alex-shpak/hugo-book
 <link rel="stylesheet" href="/website/book.min.b71fe3c1d3675e52d80430d63a71819e12d05dee934e099a700bacfd4c49a7be.css" integrity="sha256-tx/jwdNnXlLYBDDWOnGBnhLQXe6TTgmacAus/UxJp74=" crossorigin="anonymous">
 
 
-  <script defer type="module" src="/website/en.search.min.ac243e72c2e2f9a899614754c9712b4d1274e3ff47f46f67b0fa074a8ec7c565.js" integrity="sha256-rCQ&#43;csLi&#43;aiZYUdUyXErTRJ04/9H9G9nsPoHSo7HxWU=" crossorigin="anonymous"></script>
+  <script defer type="module" src="/website/en.search.min.f04fc64d169d35bdda89cffcd5476f0e9940037fa8dd63c43a845a86324f97ce.js" integrity="sha256-8E/GTRadNb3aic/81UdvDplAA3&#43;o3WPEOoRahjJPl84=" crossorigin="anonymous"></script>
 <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/website/index.xml" title="Tutorial" />
 
   
@@ -69,20 +72,6 @@ https://github.com/alex-shpak/hugo-book
 
   
   <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/website/posts/20260704194319-archlinux/" class="">
-      Tutorial</a>
-  
-
-        </li>
-      
     
       
         <li>
@@ -315,7 +304,13 @@ https://github.com/alex-shpak/hugo-book
   <aside class="hidden">
     
   
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#开始安装"><span class="org-todo todo TODO">TODO</span> 开始安装 <span class="timestamp-wrapper"><span class="timestamp">&lt;2026-07-06 一&gt;</span></span></a></li>
+    <li><a href="#关于arch-linux的安装教程">关于arch linux的安装教程</a></li>
+    <li><a href="#安装完成"><span class="org-todo done DONE">DONE</span> 安装完成 <span class="timestamp-wrapper"><span class="timestamp">&lt;2026-07-06 一&gt;</span></span></a></li>
+  </ul>
+</nav>
 
 
 
@@ -326,7 +321,25 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown book-article"></article>
+  <article class="markdown book-article"><h2 id="开始安装"><span class="org-todo todo TODO">TODO</span> 开始安装 <span class="timestamp-wrapper"><span class="timestamp">&lt;2026-07-06 一&gt;</span></span><a class="anchor" href="#%e5%bc%80%e5%a7%8b%e5%ae%89%e8%a3%85">#</a></h2>
+<h2 id="关于arch-linux的安装教程">关于arch linux的安装教程<a class="anchor" href="#%e5%85%b3%e4%ba%8earch-linux%e7%9a%84%e5%ae%89%e8%a3%85%e6%95%99%e7%a8%8b">#</a></h2>
+<ul>
+<li>使用 <code>setfont-132tar</code> 设置终端大号字体，使用 <code>ip link</code> 检查网卡，通过<a href="/website/posts/20260706070507-iwctl/">iwctl</a>工具进行无线网连接。</li>
+<li>通过 <code>ping (website)</code> 检查网络连接是否成功。</li>
+<li>随后使用<a href="/website/posts/20260704201436-fdisk/">fdisk</a>工具对磁盘进行分区, 并格式化<a href="/website/posts/20260704203724-format/">format</a>分区，挂载<a href="/website/posts/20260704210004-mount/">mount</a>分区。</li>
+<li>更换本地源<a href="/website/posts/20260704210454-origin/">origin</a>可以提升下载速度降低失败率。</li>
+<li>现在可以使用<a href="/website/posts/20260704210707-pacstrap/">pacstrap</a>安装必要的固件。</li>
+<li>设置<a href="/website/posts/20260704211013-setting/">setting</a>系统开机自动挂载规则并进入系统。</li>
+<li>设置<a href="/website/posts/20260704211248-setting/">setting</a>时区并写入硬件。</li>
+<li>启动<a href="/website/posts/20260704211352-enable/">enable</a>必要的服务。</li>
+<li>主机本地化<a href="/website/posts/20260704211528-local/">local</a>。</li>
+<li>设置管理员密码<a href="/website/posts/20260704211928-password/">password</a>，创建用户。</li>
+<li>增强字体<a href="/website/posts/20260704212100-font/">font</a>渲染。</li>
+<li>安装引导<a href="/website/posts/20260704212154-grub/">grub</a>程序。</li>
+<li>最后通过 <code>umount -R /mnt</code> 卸载挂载点。</li>
+</ul>
+<h2 id="安装完成"><span class="org-todo done DONE">DONE</span> 安装完成 <span class="timestamp-wrapper"><span class="timestamp">&lt;2026-07-06 一&gt;</span></span><a class="anchor" href="#%e5%ae%89%e8%a3%85%e5%ae%8c%e6%88%90">#</a></h2>
+</article>
  
       
 
@@ -349,6 +362,10 @@ https://github.com/alex-shpak/hugo-book
  
         
   
+  <div class="book-comments">
+
+</div>
+  
  
         
         
@@ -370,7 +387,13 @@ https://github.com/alex-shpak/hugo-book
     <div class="book-toc-content">
       
   
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#开始安装"><span class="org-todo todo TODO">TODO</span> 开始安装 <span class="timestamp-wrapper"><span class="timestamp">&lt;2026-07-06 一&gt;</span></span></a></li>
+    <li><a href="#关于arch-linux的安装教程">关于arch linux的安装教程</a></li>
+    <li><a href="#安装完成"><span class="org-todo done DONE">DONE</span> 安装完成 <span class="timestamp-wrapper"><span class="timestamp">&lt;2026-07-06 一&gt;</span></span></a></li>
+  </ul>
+</nav>
 
 
 

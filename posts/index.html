@@ -27,7 +27,7 @@ https://github.com/alex-shpak/hugo-book
 <link rel="stylesheet" href="/website/book.min.b71fe3c1d3675e52d80430d63a71819e12d05dee934e099a700bacfd4c49a7be.css" integrity="sha256-tx/jwdNnXlLYBDDWOnGBnhLQXe6TTgmacAus/UxJp74=" crossorigin="anonymous">
 
 
-  <script defer type="module" src="/website/en.search.min.ac243e72c2e2f9a899614754c9712b4d1274e3ff47f46f67b0fa074a8ec7c565.js" integrity="sha256-rCQ&#43;csLi&#43;aiZYUdUyXErTRJ04/9H9G9nsPoHSo7HxWU=" crossorigin="anonymous"></script>
+  <script defer type="module" src="/website/en.search.min.f04fc64d169d35bdda89cffcd5476f0e9940037fa8dd63c43a845a86324f97ce.js" integrity="sha256-8E/GTRadNb3aic/81UdvDplAA3&#43;o3WPEOoRahjJPl84=" crossorigin="anonymous"></script>
 <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/website/posts/index.xml" title="Posts" />
 
   
@@ -68,20 +68,6 @@ https://github.com/alex-shpak/hugo-book
 
   
   <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/website/posts/20260704194319-archlinux/" class="">
-      Tutorial</a>
-  
-
-        </li>
-      
     
       
         <li>
@@ -348,33 +334,6 @@ https://github.com/alex-shpak/hugo-book
   
   <article class="book-post markdown">
     <h2>
-      <a href="/website/posts/20260704194319-archlinux/">Tutorial</a>
-    </h2>
-    <div class="book-post-container flex gap">
-      <div>
-        
-
-
-  
-
-  
-
-
-        <div class="book-post-content markdown-inner"><h2 id="关于arch-linux的安装教程">关于arch linux的安装教程<a class="anchor" href="#%e5%85%b3%e4%ba%8earch-linux%e7%9a%84%e5%ae%89%e8%a3%85%e6%95%99%e7%a8%8b">#</a></h2>
-<ul>
-<li>使用 <code>setfont-132tar</code> 设置终端大号字体，使用 <code>ip link</code> 检查网卡，通过<a href="/website/posts/20260706070507-iwctl/">iwctl</a>工具进行无线网连接。</li>
-<li>通过 <code>ping (website)</code> 检查网络连接是否成功。</li>
-<li>随后使用<a href="/website/posts/20260704201436-fdisk/">fdisk</a>工具对磁盘进行分区, 并格式化<a href="/website/posts/20260704203724-format/">format</a>分区，挂载<a href="/website/posts/20260704210004-mount/">mount</a>分区。</li>
-<li>更换本地源<a href="/website/posts/20260704210454-origin/">origin</a>可以提升下载速度降低失败率。</li>
-<li>现在可以使用<a href="/website/posts/20260704210707-pacstrap/">pacstrap</a>安装必要的固件。</li>
-<li>设置<a href="/website/posts/20260704211013-setting/">setting</a>系统开机自动挂载规则并进入系统。</li>
-<li>设置<a href="/website/posts/20260704211248-setting/">setting</a>时区并写入硬件。</li>
-<li>启动<a href="/website/posts/20260704211352-enable/">enable …</a></li></ul></div>
-      </div></div>
-  </article>
-  
-  <article class="book-post markdown">
-    <h2>
       <a href="/website/posts/20260704211352-enable/">enable</a>
     </h2>
     <div class="book-post-container flex gap">
@@ -554,6 +513,27 @@ https://github.com/alex-shpak/hugo-book
 
         <div class="book-post-content markdown-inner"><h2 id="更换china源">更换China源<a class="anchor" href="#%e6%9b%b4%e6%8d%a2china%e6%ba%90">#</a></h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>reflector --country China --age <span style="color:#ae81ff">24</span> --sort rate --protocol https --save /etc/pacman.d/mirrorlist</span></span></code></pre></div></div>
+      </div></div>
+  </article>
+  
+  <article class="book-post markdown">
+    <h2>
+      <a href="/website/posts/20260704210707-pacstrap/">pacstrap</a>
+    </h2>
+    <div class="book-post-container flex gap">
+      <div>
+        
+
+
+  
+
+  
+
+
+        <div class="book-post-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pacstrap -K /mnt <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>base base-devel git cmake linux-zen linux-firmware amd-ucode intel-ucode emacs kitty networkmanager <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>iproute2 noto-fonts noto-fonts-cjk noto-fonts-emoji i3-wm dmenu i3status sddm pipewire wireplumber <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>pipewire-alsa pipewire-pluse bluez …</span></span></span></span></span></span></span></span></code></pre></div></div>
       </div></div>
   </article>
   
