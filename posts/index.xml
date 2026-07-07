@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Posts on Tutorial</title>
-		<link>https://liu2006.github.io/website/posts/</link>
+		<link>http://localhost:1313/website/posts/</link>
 		<description>Recent content in Posts on Tutorial</description>
 		<generator>Hugo</generator>
 		<language>zh-cn</language>
@@ -10,96 +10,96 @@
 		
 		
 		
-			<atom:link href="https://liu2006.github.io/website/posts/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="http://localhost:1313/website/posts/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>enable</title>
-				<link>https://liu2006.github.io/website/posts/20260704211352-enable/</link>
+				<link>http://localhost:1313/website/posts/20260704211352-enable/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://liu2006.github.io/website/posts/20260704211352-enable/</guid>
+				<guid>http://localhost:1313/website/posts/20260704211352-enable/</guid>
 				<description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo systemctl enable --now NetworkManager sddm&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;systemctl --user enable --now pipewire pipewire-pulse wireplumber bluetooth&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
 			</item>
 			<item>
 				<title>fdisk</title>
-				<link>https://liu2006.github.io/website/posts/20260704201436-fdisk/</link>
+				<link>http://localhost:1313/website/posts/20260704201436-fdisk/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://liu2006.github.io/website/posts/20260704201436-fdisk/</guid>
+				<guid>http://localhost:1313/website/posts/20260704201436-fdisk/</guid>
 				<description>&lt;h2 id=&#34;关于fdisk工具的使用教程&#34;&gt;关于fdisk工具的使用教程&lt;a class=&#34;anchor&#34; href=&#34;#%e5%85%b3%e4%ba%8efdisk%e5%b7%a5%e5%85%b7%e7%9a%84%e4%bd%bf%e7%94%a8%e6%95%99%e7%a8%8b&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;fdisk -l  &lt;span style=&#34;color:#75715e&#34;&gt;#列出可用硬盘和分区情况&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;fdisk device  &lt;span style=&#34;color:#75715e&#34;&gt;#对指定设备进行分区&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;- g  &lt;span style=&#34;color:#75715e&#34;&gt;#创建GPT分区&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;- n  &lt;span style=&#34;color:#75715e&#34;&gt;#新建分区&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;- d  &lt;span style=&#34;color:#75715e&#34;&gt;#删除分区&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;- t  &lt;span style=&#34;color:#75715e&#34;&gt;#设置分区类型&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;- w  &lt;span style=&#34;color:#75715e&#34;&gt;#保存分区&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
 			</item>
 			<item>
 				<title>font</title>
-				<link>https://liu2006.github.io/website/posts/20260704212100-font/</link>
+				<link>http://localhost:1313/website/posts/20260704212100-font/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://liu2006.github.io/website/posts/20260704212100-font/</guid>
+				<guid>http://localhost:1313/website/posts/20260704212100-font/</guid>
 				<description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;emacs /etc/profile.d/freetype2.sh  &lt;span style=&#34;color:#75715e&#34;&gt;#取消注释最后一排&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
 			</item>
 			<item>
 				<title>format</title>
-				<link>https://liu2006.github.io/website/posts/20260704203724-format/</link>
+				<link>http://localhost:1313/website/posts/20260704203724-format/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://liu2006.github.io/website/posts/20260704203724-format/</guid>
+				<guid>http://localhost:1313/website/posts/20260704203724-format/</guid>
 				<description>&lt;h2 id=&#34;如何格式化分区&#34;&gt;如何格式化分区&lt;a class=&#34;anchor&#34; href=&#34;#%e5%a6%82%e4%bd%95%e6%a0%bc%e5%bc%8f%e5%8c%96%e5%88%86%e5%8c%ba&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;mkfs.ext4 /dev/root_partiion  &lt;span style=&#34;color:#75715e&#34;&gt;#格式化根分区&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;mkswap /dev/swap_partition  &lt;span style=&#34;color:#75715e&#34;&gt;#格式化交换分区&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;mkfs.fat -F32 /dev/efi_partition  &lt;span style=&#34;color:#75715e&#34;&gt;#格式化efi分区&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
 			</item>
 			<item>
 				<title>grub</title>
-				<link>https://liu2006.github.io/website/posts/20260704212154-grub/</link>
+				<link>http://localhost:1313/website/posts/20260704212154-grub/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://liu2006.github.io/website/posts/20260704212154-grub/</guid>
+				<guid>http://localhost:1313/website/posts/20260704212154-grub/</guid>
 				<description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;grub-install --target&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;x86_64-efi --efi-directory&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;/boot --bootloader-id&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;GRUB  &lt;span style=&#34;color:#75715e&#34;&gt;#把GRUB安装到EFI/磁盘&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;grub-mkconfig -o /boot/grub/grub.cfg  &lt;span style=&#34;color:#75715e&#34;&gt;#生成启动菜单&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
 			</item>
 			<item>
 				<title>iwctl</title>
-				<link>https://liu2006.github.io/website/posts/20260706070507-iwctl/</link>
+				<link>http://localhost:1313/website/posts/20260706070507-iwctl/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://liu2006.github.io/website/posts/20260706070507-iwctl/</guid>
+				<guid>http://localhost:1313/website/posts/20260706070507-iwctl/</guid>
 				<description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;iwctl&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;iwd&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# device list  #查找网卡&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;iwd&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# station wlan0 scan  #启动wifi扫描&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;iwd&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# station wlan0 get-network  #列出所有可用的网络&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;iwd&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# station wlan0 connect (device)  #连接wifi&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
 			</item>
 			<item>
 				<title>local</title>
-				<link>https://liu2006.github.io/website/posts/20260704211528-local/</link>
+				<link>http://localhost:1313/website/posts/20260704211528-local/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://liu2006.github.io/website/posts/20260704211528-local/</guid>
+				<guid>http://localhost:1313/website/posts/20260704211528-local/</guid>
 				<description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;emacs /etc/locale.gen  &lt;span style=&#34;color:#75715e&#34;&gt;#取消注释zh_CN.UTF-8和en_US.UTF-8&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;locale-gen  &lt;span style=&#34;color:#75715e&#34;&gt;#同步&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;emacs /etc/locale.conf  &lt;span style=&#34;color:#75715e&#34;&gt;#添加zh_CN.UTF-8和en_US.UTF-8 UTF-8&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
 			</item>
 			<item>
 				<title>mount</title>
-				<link>https://liu2006.github.io/website/posts/20260704210004-mount/</link>
+				<link>http://localhost:1313/website/posts/20260704210004-mount/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://liu2006.github.io/website/posts/20260704210004-mount/</guid>
+				<guid>http://localhost:1313/website/posts/20260704210004-mount/</guid>
 				<description>&lt;h2 id=&#34;分区挂载教程&#34;&gt;分区挂载教程&lt;a class=&#34;anchor&#34; href=&#34;#%e5%88%86%e5%8c%ba%e6%8c%82%e8%bd%bd%e6%95%99%e7%a8%8b&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;mount /dev/root /mnt  &lt;span style=&#34;color:#75715e&#34;&gt;#挂载根分区&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;mount /dev/efi --mkdir /mnt/boot  &lt;span style=&#34;color:#75715e&#34;&gt;#创建efi分区并挂载&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sawpon /dev/swap_partition  &lt;span style=&#34;color:#75715e&#34;&gt;#启动swap分区&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
 			</item>
 			<item>
 				<title>origin</title>
-				<link>https://liu2006.github.io/website/posts/20260704210454-origin/</link>
+				<link>http://localhost:1313/website/posts/20260704210454-origin/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://liu2006.github.io/website/posts/20260704210454-origin/</guid>
+				<guid>http://localhost:1313/website/posts/20260704210454-origin/</guid>
 				<description>&lt;h2 id=&#34;更换china源&#34;&gt;更换China源&lt;a class=&#34;anchor&#34; href=&#34;#%e6%9b%b4%e6%8d%a2china%e6%ba%90&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;reflector --country China --age &lt;span style=&#34;color:#ae81ff&#34;&gt;24&lt;/span&gt; --sort rate --protocol https --save /etc/pacman.d/mirrorlist&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
 			</item>
 			<item>
 				<title>pacstrap</title>
-				<link>https://liu2006.github.io/website/posts/20260704210707-pacstrap/</link>
+				<link>http://localhost:1313/website/posts/20260704210707-pacstrap/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://liu2006.github.io/website/posts/20260704210707-pacstrap/</guid>
+				<guid>http://localhost:1313/website/posts/20260704210707-pacstrap/</guid>
 				<description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pacstrap -K /mnt &lt;span style=&#34;color:#ae81ff&#34;&gt;\&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;base base-devel git cmake linux-zen linux-firmware amd-ucode intel-ucode emacs kitty networkmanager &lt;span style=&#34;color:#ae81ff&#34;&gt;\&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;iproute2 noto-fonts noto-fonts-cjk noto-fonts-emoji i3-wm dmenu i3status sddm pipewire wireplumber &lt;span style=&#34;color:#ae81ff&#34;&gt;\&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pipewire-alsa pipewire-pluse bluez bluez-utils mpv&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
 			</item>
 			<item>
 				<title>password</title>
-				<link>https://liu2006.github.io/website/posts/20260704211928-password/</link>
+				<link>http://localhost:1313/website/posts/20260704211928-password/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://liu2006.github.io/website/posts/20260704211928-password/</guid>
+				<guid>http://localhost:1313/website/posts/20260704211928-password/</guid>
 				<description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;emacs /etc/hostname  &lt;span style=&#34;color:#75715e&#34;&gt;#添加用户名&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;passwd&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;useradd -m -G wheel -s /bin/bash liu&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;passwd liu&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;EDITOR&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;emacs visudo  &lt;span style=&#34;color:#75715e&#34;&gt;#取消注释 %wheel ALL=(ALL)ALL&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
 			</item>
 			<item>
 				<title>setting</title>
-				<link>https://liu2006.github.io/website/posts/20260704211013-setting/</link>
+				<link>http://localhost:1313/website/posts/20260704211013-setting/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://liu2006.github.io/website/posts/20260704211013-setting/</guid>
+				<guid>http://localhost:1313/website/posts/20260704211013-setting/</guid>
 				<description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;genfstab -U /mnt &amp;gt;&amp;gt; /mnt/etc/fstab&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;arch-chroot /mnt&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
 			</item>
 			<item>
 				<title>setting</title>
-				<link>https://liu2006.github.io/website/posts/20260704211248-setting/</link>
+				<link>http://localhost:1313/website/posts/20260704211248-setting/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://liu2006.github.io/website/posts/20260704211248-setting/</guid>
+				<guid>http://localhost:1313/website/posts/20260704211248-setting/</guid>
 				<description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ln -sf /usr/share/zoneinfo/Area/Location /etc/localtime&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hwclock --systohc&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
 			</item>
 	</channel>
